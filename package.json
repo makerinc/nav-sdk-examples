@@ -11,7 +11,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build-component": "yarn esbuild src/components/MyCustomProductCard.tsx --bundle --minify --outfile=src/components/MyCustomProductCard.js --jsx=automatic --format=esm --platform=browser --external:react --external:react-dom"
+    "build-component": "yarn esbuild src/components/MyCustomProductCard.tsx --bundle --minify --outfile=public/MyCustomProductCard.js --jsx=automatic --format=esm --platform=browser --external:react --external:react-dom"
   },
   "dependencies": {
     "nav-sdk": "makerinc/nav-sdk#dev",
