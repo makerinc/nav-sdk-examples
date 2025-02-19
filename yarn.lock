@@ -2028,7 +2028,7 @@ __metadata:
     "@vitejs/plugin-react": "npm:^4.3.4"
     esbuild: "npm:^0.25.0"
     globals: "npm:^15.14.0"
-    nav-sdk: "makerinc/nav-sdk#dev"
+    nav-sdk: "makerinc/nav-sdk#51da5b509df82fba3b69a306da03e62a110377fc"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
     typescript: "npm:~5.7.2"
@@ -2053,14 +2053,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nav-sdk@makerinc/nav-sdk#dev":
+"nav-sdk@makerinc/nav-sdk#51da5b509df82fba3b69a306da03e62a110377fc":
   version: 0.0.1
-  resolution: "nav-sdk@https://github.com/makerinc/nav-sdk.git#commit=2e9bca3d1a5f8fa54413d82875ad7bc5659578dd"
+  resolution: "nav-sdk@https://github.com/makerinc/nav-sdk.git#commit=51da5b509df82fba3b69a306da03e62a110377fc"
   dependencies:
     react: "npm:^16.14.0"
     react-dom: "npm:^16.14.0"
     react-imported-component: "npm:^6.5.4"
-  checksum: 10c0/fc40e95a2f8820de076788928ff53323729ddedc2a0855264443809d32470cbeeffa742d0b415841a45c4dab0dd7a1b887d7ca793340e06cd5a618b1b77caf0e
+  checksum: 10c0/018209bba79901c0aee4f34b092e62d3d900e54954930b811e879b941af026cbe5e8eff0c0d75848ef76362d8345aed25337906cd02acb93e649cd3de31c0311
   languageName: node
   linkType: hard
 
