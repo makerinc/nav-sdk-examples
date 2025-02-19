@@ -13,7 +13,7 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "nav-sdk": "git+ssh://git@github.com/makerinc/nav-sdk.git#2e9bca3d1a5f8fa54413d82875ad7bc5659578dd"
+    "nav-sdk": "makerinc/nav-sdk#dev"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
