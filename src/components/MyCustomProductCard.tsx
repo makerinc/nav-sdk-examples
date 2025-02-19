@@ -8,10 +8,10 @@ export const Component = (props: Props) => {
 	return (
 		<div>
 			<div>
-				{props.data.name}
+				<b>{props.data.id}</b>
 			</div>
 			<div>
-				{props.data.description}
+				{props.data.name}
 			</div>
 		</div>
 	)
