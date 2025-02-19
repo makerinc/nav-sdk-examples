@@ -11,7 +11,7 @@ export const Component = (props: Props) => {
 				{props.data.name}
 			</div>
 			<div>
-				{props.data.otherVariants[0].price}
+				{props.data.description}
 			</div>
 		</div>
 	)
