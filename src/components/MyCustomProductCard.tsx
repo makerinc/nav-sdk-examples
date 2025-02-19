@@ -7,7 +7,7 @@ type Props = {
 export const Component = (props: Props) => {
 	return (
 		<div>
-			<b>Hello!!!!</b>
+			<b>Hey guys this really cool!!!!</b>
 			<div>{props.data.id}</div>
 			<div>
 				{props.data.name}
