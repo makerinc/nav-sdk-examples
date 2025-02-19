@@ -8,9 +8,6 @@ export const Component = (props: Props) => {
 	return (
 		<div>
 			<div>
-				<b>{props.data.id}</b>
-			</div>
-			<div>
 				{props.data.name}
 			</div>
 		</div>
