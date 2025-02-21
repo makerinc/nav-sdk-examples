@@ -1910,7 +1910,7 @@ __metadata:
     esbuild: "npm:^0.25.0"
     globals: "npm:^15.14.0"
     husky: "npm:^9.1.7"
-    nav-sdk: "makerinc/nav-sdk#92ef2cbf2ba95c6190f23b47f91c94a9957ec7e0"
+    nav-sdk: "makerinc/nav-sdk#87a81547e40e51ea377bc4e792f3f7658a41c312"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
     typescript: "npm:~5.7.2"
@@ -1935,13 +1935,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nav-sdk@makerinc/nav-sdk#92ef2cbf2ba95c6190f23b47f91c94a9957ec7e0":
+"nav-sdk@makerinc/nav-sdk#87a81547e40e51ea377bc4e792f3f7658a41c312":
   version: 0.0.1
-  resolution: "nav-sdk@https://github.com/makerinc/nav-sdk.git#commit=92ef2cbf2ba95c6190f23b47f91c94a9957ec7e0"
+  resolution: "nav-sdk@https://github.com/makerinc/nav-sdk.git#commit=87a81547e40e51ea377bc4e792f3f7658a41c312"
   dependencies:
     react: "npm:^16.14.0"
     react-dom: "npm:^16.14.0"
-  checksum: 10c0/936ab9cb0c215d5bca67e73a369693c185acf5985ee586d00acf115da2fd665f52fa46a1aff094109fb4350e76b79dc7bf3a4989946e9cfa278efb07ee1c4e1f
+  checksum: 10c0/b693beaf74b61d54c178673c6702ec967c3f00bba4034015086759c9f507d3a8b8781fd7368007d87008bbc1112b7590ad2e1f887647b4b85e57ee29246ff74a
   languageName: node
   linkType: hard
 
