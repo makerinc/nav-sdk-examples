@@ -11,12 +11,12 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build-component": "yarn esbuild src/components/MyCustomProductCard.tsx --bundle --minify --outfile=public/MyCustomProductCard.js --jsx=automatic --format=esm --platform=browser",
+    "build-component": "yarn esbuild src/components/MyCustomProductCard.tsx --bundle --minify --outfile=public/MyCustomProductCard.js --jsx=automatic --format=esm --platform=browser --external:react --external:react-dom",
     "prepare": "husky"
   },
   "dependencies": {
     "esbuild": "^0.25.0",
-    "nav-sdk": "makerinc/nav-sdk#ad19b66e783089ebd31270b18cde758cd257ebc7",
+    "nav-sdk": "makerinc/nav-sdk#c5f3b534d00c4aab7c633a6c6d1f934895442d81",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
