@@ -17,12 +17,12 @@
   "dependencies": {
     "esbuild": "^0.25.0",
     "nav-sdk": "makerinc/nav-sdk#ad19b66e783089ebd31270b18cde758cd257ebc7",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
+    "@types/react": "^16.9.14",
+    "@types/react-dom": "^16.9.14",
     "@vitejs/plugin-react": "^4.3.4",
     "globals": "^15.14.0",
     "husky": "^9.1.7",
