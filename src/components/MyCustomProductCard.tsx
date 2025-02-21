@@ -9,15 +9,14 @@ export const Component = (props: Props) => {
 	let [count, setCount] = useState(0);
 	return (
 		<div>
-			<b>Hey guys this really cool!!!!</b>
-			<div>{props.data.id}</div>
+			<div>ID: <b>{props.data.id}</b></div>
+			<div>
+				Name: <b>{props.data.name}</b>
+			</div>
 			<div>
 				<button onClick={() => setCount(count + 1)}>
 					Clicked {count} times
 				</button>
-			</div>
-			<div>
-				{props.data.name}
 			</div>
 		</div>
 	)
