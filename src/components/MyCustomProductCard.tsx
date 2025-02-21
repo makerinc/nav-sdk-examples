@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Product, registry } from 'nav-sdk';
 
 type Props = {
