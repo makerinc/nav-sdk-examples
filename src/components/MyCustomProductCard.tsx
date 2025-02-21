@@ -23,6 +23,6 @@ export const Component = (props: Props) => {
 	)
 }
 
-registry.register('product', "my-custom-product-card", (product: Product) => <Component data={product} />);
+registry.register('product', "my-custom-product-card", Component);
 
 export default Component;
