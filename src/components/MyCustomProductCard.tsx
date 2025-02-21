@@ -6,18 +6,18 @@ type Props = {
 }
 
 export const Component = (props: Props) => {
-	let [count, setCount] = useState(0);
+	// let [count, setCount] = useState(0);
 	return (
 		<div>
 			<div>ID: <b>{props.data.id}</b></div>
 			<div>
 				Name: <b>{props.data.name}</b>
 			</div>
-			<div>
+			{/* <div>
 				<button onClick={() => setCount(count + 1)}>
 					Clicked {count} times
 				</button>
-			</div>
+			</div> */}
 		</div>
 	)
 }
