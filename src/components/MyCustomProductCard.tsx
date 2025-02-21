@@ -1,5 +1,6 @@
 
-import { React, Product, registry, Image } from 'nav-sdk';
+import { Product, registry, Image } from 'nav-sdk';
+import React from "nav-sdk/react"
 
 type Props = {
 	data: Product;
