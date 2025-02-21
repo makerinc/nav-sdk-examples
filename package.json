@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "esbuild": "^0.25.0",
-    "nav-sdk": "makerinc/nav-sdk#00a93cfe442e30fe4ad9e71962221fa9c55d5c34",
+    "nav-sdk": "makerinc/nav-sdk#492f37786acd4779719d51dd9b339498553bf802",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
