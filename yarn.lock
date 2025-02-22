@@ -645,13 +645,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@makerinc/nav-sdk@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@makerinc/nav-sdk@npm:1.0.0"
+"@makerinc/nav-sdk@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@makerinc/nav-sdk@npm:1.0.2"
   dependencies:
     react: "npm:^16.14.0"
     react-dom: "npm:^16.14.0"
-  checksum: 10c0/74bc8bb7ea6e3e19639091e08e04605055f9eb67c1e002c03413f5653f0efa9587501d133f85129cb663dc43b6068501ba2b073c5e47e304727b03bd8595445f
+  checksum: 10c0/7242de25a332571c2304630036445c44b21511ad16f4ffb0c1f38f188a2b6302560869b503bab3a6b265b45f5374134baf70b7d09558c9ddd151ac4d47b926ae
   languageName: node
   linkType: hard
 
@@ -1930,7 +1930,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "my-custom-store@workspace:."
   dependencies:
-    "@makerinc/nav-sdk": "npm:^1.0.0"
+    "@makerinc/nav-sdk": "npm:^1.0.2"
     "@types/react": "npm:^16.9.14"
     "@types/react-dom": "npm:^16.9.14"
     "@vitejs/plugin-react": "npm:^4.3.4"
