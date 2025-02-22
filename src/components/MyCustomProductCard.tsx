@@ -1,141 +1,102 @@
+import { registry, Product } from 'nav-sdk'
 
-// import { Product, registry, Image } from 'nav-sdk';
-// import React from "nav-sdk/react"
-
-// type Props = {
-// 	data: Product;
-// }
-
-// export const Component = (props: Props) => {
-// 	let [count, setCount] = React.useState(0);
-
-// 	return (
-// 		<div style={{
-// 			display: 'flex',
-// 			flexDirection: 'column',
-// 		}}>
-// 			<div style={{
-// 				position: 'relative',
-// 				width: '100%',
-// 				paddingBottom: '100%',
-// 			}}>
-// 				<Image src="https://placekitten.com/200/300" alt='Kitten' fit="cover" priority={0} />
-
-// 			</div>
-// 			<div>ID: <b>{props.data.id}</b></div>
-// 			<div>
-// 				Name: <b>{props.data.name}</b>
-// 			</div>
-// 			<div>
-// 				<button onClick={() => setCount(count + 1)}>Clicked {count} times</button>
-// 			</div>
-// 		</div>
-// 	)
-// }
-
-// registry.register('product', "my-custom-product-card", Component);
-
-// export default Component;
-
-
-// import React from 'react';
-
-import { Product, registry } from 'nav-sdk';
-
-
-type Props = {
-	data: Product;
-}
+type Props = { data: Product }
 
 const ProductCard = (props: Props) => {
 	return (
 		<div style={{
-			border: '1px solid #e1e1e1',
-			borderRadius: '8px',
-			padding: '16px',
-			maxWidth: '300px',
 			width: '100%',
-			boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-			backgroundColor: 'white',
-			margin: '20px',
-			transition: 'transform 0.2s ease',
-			cursor: 'pointer',
+			maxWidth: '400px',
+			padding: '20px',
+			fontFamily: 'Inter, sans-serif'
 		}}>
 			<div style={{
-				width: '100%',
-				paddingTop: '75%',
-				position: 'relative',
-				overflow: 'hidden',
-				borderRadius: '4px',
+				position: 'relative'
 			}}>
 				<img
-					src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300"
-					alt="Premium Headphones"
+					src="https://res.cloudinary.com/makerinc/image/fetch/c_limit,w_1200,f_auto,q_auto:best,fl_preserve_transparency,dpr_2/https%3A%2F%2Fmaker-devi-dev.s3-accelerate.amazonaws.com%2Fuploads%2Fuser_2sZ8dyEdMxDKw8LX1Mlgz1dOsXn%2Fcm7fkch9l004gstfb47hgehfb%2Fmessages%2F1740190253681-ku9uzi.png"
 					style={{
-						position: 'absolute',
-						top: '0',
-						left: '0',
 						width: '100%',
-						height: '100%',
-						objectFit: 'cover',
+						height: 'auto',
+						borderRadius: '8px'
 					}}
+					alt="Product"
 				/>
+				<button style={{
+					position: 'absolute',
+					top: '10px',
+					right: '10px',
+					background: 'white',
+					border: 'none',
+					borderRadius: '50%',
+					width: '36px',
+					height: '36px',
+					display: 'flex',
+					alignItems: 'center',
+					justifyContent: 'center',
+					cursor: 'pointer'
+				}}>
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="black" strokeWidth="2" />
+					</svg>
+				</button>
 			</div>
 
 			<div style={{
-				marginTop: '16px',
+				display: 'flex',
+				gap: '8px',
+				marginTop: '12px'
 			}}>
-				<h2 style={{
-					fontSize: '1.25rem',
-					fontWeight: '600',
+				<span style={{
+					background: '#FFF4F4',
 					color: '#333',
-					marginBottom: '8px',
+					padding: '4px 12px',
+					borderRadius: '4px',
+					fontSize: '14px'
 				}}>
-					{props.data.name}
-				</h2>
-
-				<p style={{
-					fontSize: '0.875rem',
-					color: '#666',
-					marginBottom: '16px',
-					lineHeight: '1.5',
+					Customisable
+				</span>
+				<span style={{
+					background: '#FFE8E8',
+					color: '#FF4444',
+					padding: '4px 12px',
+					borderRadius: '4px',
+					fontSize: '14px'
 				}}>
-					{props.data.description}
-				</p>
+					New
+				</span>
+			</div>
 
-				<div style={{
-					display: 'flex',
-					justifyContent: 'space-between',
-					alignItems: 'center',
-				}}>
-					<span style={{
-						fontSize: '1.25rem',
-						fontWeight: '700',
-						color: '#2c5282',
-					}}>
-						$299.99
-					</span>
+			<h3 style={{
+				fontSize: '16px',
+				fontWeight: '500',
+				margin: '12px 0'
+			}}>
+				{props.data.name}
+			</h3>
 
-					<button style={{
-						backgroundColor: '#2c5282',
-						color: 'white',
-						padding: '8px 16px',
-						borderRadius: '4px',
-						border: 'none',
-						cursor: 'pointer',
-						fontSize: '0.875rem',
-						fontWeight: '500',
-						transition: 'background-color 0.2s ease',
-					}}>
-						Add to Cart
-					</button>
-				</div>
+			<div style={{
+				fontSize: '18px',
+				fontWeight: '600',
+				marginBottom: '8px'
+			}}>
+				₹4,990
+			</div>
+
+			<div style={{
+				color: '#996515',
+				fontSize: '14px',
+				display: 'flex',
+				alignItems: 'center',
+				gap: '4px'
+			}}>
+				Member Price ₹4,491
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+					<path d="M9 18l6-6-6-6" />
+				</svg>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-
-registry.register('product', "my-custom-product-card", ProductCard);
-
-export default ProductCard;
+registry.register('product', "my-custom-product-card", ProductCard)
