@@ -1,4 +1,4 @@
-import { registry, Product } from 'nav-sdk'
+import { registry, Product } from '@makerinc/nav-sdk'
 
 type Props = { data: Product }
 

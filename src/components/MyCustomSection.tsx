@@ -1,4 +1,4 @@
-import { registry } from 'nav-sdk'
+import { registry } from '@makerinc/nav-sdk'
 
 type item = {
 	tag: string,
