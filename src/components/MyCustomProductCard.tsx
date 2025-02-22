@@ -2,7 +2,7 @@ import { registry, Product } from 'nav-sdk'
 
 type Props = { data: Product }
 
-const ProductCard = (props: Props) => {
+const MyCustomProductCard = (props: Props) => {
 	return (
 		<div style={{
 			width: '100%',
@@ -99,4 +99,6 @@ const ProductCard = (props: Props) => {
 	)
 }
 
-registry.register('product', "my-custom-product-card", ProductCard)
+registry.register('product', "my-custom-product-card", MyCustomProductCard)
+
+export default MyCustomProductCard
