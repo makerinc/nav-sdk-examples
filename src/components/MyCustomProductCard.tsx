@@ -72,7 +72,7 @@ const MyCustomProductCard = (props: Props) => {
 				fontWeight: '500',
 				margin: '12px 0'
 			}}>
-				{props.data.name}
+				{props.data.title}
 			</h3>
 
 			<div style={{
