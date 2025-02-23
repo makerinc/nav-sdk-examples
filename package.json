@@ -15,7 +15,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@makerinc/nav-sdk": "^1.1.0",
+    "@makerinc/nav-sdk": "^1.1.1",
     "esbuild": "^0.25.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
