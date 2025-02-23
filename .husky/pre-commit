@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-yarn build-component
+yarn build-components

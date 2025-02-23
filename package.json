@@ -11,11 +11,11 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build-component": "yarn esbuild src/components/*.tsx --bundle --minify --outdir=public --jsx=automatic --format=esm --platform=browser --external:react --external:react-dom",
+    "build-components": "yarn esbuild src/components/*.tsx --bundle --minify --outdir=public --jsx=automatic --format=esm --platform=browser --external:react --external:react-dom",
     "prepare": "husky"
   },
   "dependencies": {
-    "@makerinc/nav-sdk": "^1.0.2",
+    "@makerinc/nav-sdk": "^1.1.0",
     "esbuild": "^0.25.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
