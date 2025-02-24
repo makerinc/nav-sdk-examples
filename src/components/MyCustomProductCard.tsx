@@ -23,6 +23,7 @@ export const Component = (props: Props) => {
 					left: 0,
 					width: '100%',
 					height: '100%',
+					backgroundColor: "#fff"
 				}}>
 					<Image src={props.data.variants[0].additionalImageLinks[0]} alt={props.data.title} fit="cover" priority={1} />
 				</div>
