@@ -31,6 +31,9 @@ export const Component = (props: Props) => {
 			<div>
 				{props.data.title}
 			</div>
+			<div>
+				<b>{props.data.variants[0].price}</b>
+			</div>
 		</div>
 	)
 }
