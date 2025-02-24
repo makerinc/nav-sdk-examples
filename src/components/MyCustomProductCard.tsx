@@ -6,29 +6,34 @@ type Props = {
 }
 
 export const Component = (props: Props) => {
-	let [state, setState] = React.useState(0);
-
-	const handleClick = () => {
-		setState(state + 1);
-	};
+	let [hovering, setHovering] = React.useState(false);
 
 	return (
-		<div>
+		<div onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)}>
 			<div style={{
 				position: 'relative',
 				aspectRatio: '3/4',
 				width: '100%',
 			}}>
 				<Image src={props.data.variants[0].imageLink} alt={props.data.title} fit="cover" priority={1} />
+				<div style={{
+					opacity: hovering ? 1 : 0,
+					position: 'absolute',
+					top: 0,
+					left: 0,
+					width: '100%',
+					height: '100%',
+				}}>
+					<Image src={props.data.variants[0].additionalImageLinks[0]} alt={props.data.title} fit="cover" priority={1} />
+				</div>
 			</div>
 			<div>
 				{props.data.title}
 			</div>
-			<button onClick={handleClick}>Clicked {state} times</button>
 		</div>
 	)
 }
 
-registry.register('product', "my-custom-product-card", Component);
+registry.register('product-card', "my-custom-product-card", Component);
 
 export default Component;

@@ -22,9 +22,12 @@ function App() {
           groupId: "G123",
           id: "V12345",
           imageSize: [500, 500],
-          additionalImageSizes: [[1000, 1000], [1500, 1500]],
           imageLink: "https://example.com/images/tshirt-blue.jpg",
-          moreImageLinks: "https://example.com/images/tshirt-blue-side.jpg,https://example.com/images/tshirt-blue-back.jpg",
+          additionalImageLinks: [
+            "https://example.com/images/tshirt-blue-1.jpg",
+            "https://example.com/images/tshirt-blue-2.jpg"
+          ],
+          additionalImageSizes: [[1000, 1000], [1500, 1500]],
           customLabel0: "Best Seller",
           customLabel1: "Organic Cotton",
           availability: "In Stock",

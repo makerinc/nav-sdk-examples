@@ -133,6 +133,6 @@ const HeroSection = () => {
 	)
 }
 
-registry.register('category', "my-custom-section", HeroSection)
+registry.register('banners-section', "my-custom-banner-section", HeroSection)
 
 export default HeroSection
