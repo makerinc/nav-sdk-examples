@@ -6,6 +6,7 @@ function App() {
     <MyCustomProductCard data={{
       id: "P12345",
       title: "Premium Cotton T-Shirt",
+      categoryId: "XYZ",
       link: "https://example.com/products/premium-cotton-tshirt",
       productType: "Apparel",
       variants: [

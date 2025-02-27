@@ -9,7 +9,7 @@ export const Component = (props: Props) => {
 	let [hovering, setHovering] = React.useState(false);
 
 	return (
-		<Link target="product" href={props.data.link} productId={props.data.id} onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)}>
+		<Link target="product" href={props.data.link} productId={props.data.id} categoryId={props.data.categoryId} onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)}>
 			<div style={{
 				position: 'relative',
 				aspectRatio: '3/4',
