@@ -34,6 +34,9 @@ export const Component = (props: Props) => {
 			<div>
 				<b>{props.data.variants[0].price}</b>
 			</div>
+			<Link href={props.data.link} target="_blank" onClick={e => e.stopPropagation()}>
+				Open Product
+			</Link>
 		</Link>
 	)
 }
