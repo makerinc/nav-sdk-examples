@@ -1,4 +1,4 @@
-import { registry } from '@makerinc/nav-sdk'
+import { registry, Link } from '@makerinc/nav-sdk'
 
 type item = {
 	tag: string,
@@ -72,16 +72,18 @@ const HeroSection = () => {
 				}}>
 					{item.title}
 				</div>
-				<button style={{
+				<Link target="category" categoryId='lia3UFlCDu' style={{
 					backgroundColor: '#F8E469',
 					color: 'black',
 					padding: '8px 16px',
 					borderRadius: '20px',
 					fontSize: '14px',
-					fontWeight: '500'
+					fontWeight: '500',
+					textDecoration: 'none',
+					display: 'inline-block',
 				}}>
 					Shop now
-				</button>
+				</Link>
 			</div>
 			{item.specialTag && (
 				<div style={{
