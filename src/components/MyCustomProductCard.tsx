@@ -1,5 +1,5 @@
 import React from '@makerinc/nav-sdk/react';
-import { Product, registry, Image } from '@makerinc/nav-sdk';
+import { Product, registry, Image, Link } from '@makerinc/nav-sdk';
 
 type Props = {
 	data: Product;
@@ -9,7 +9,7 @@ export const Component = (props: Props) => {
 	let [hovering, setHovering] = React.useState(false);
 
 	return (
-		<div onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)}>
+		<Link target="product" href={props.data.link} productId={props.data.id} onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)}>
 			<div style={{
 				position: 'relative',
 				aspectRatio: '3/4',
@@ -34,7 +34,7 @@ export const Component = (props: Props) => {
 			<div>
 				<b>{props.data.variants[0].price}</b>
 			</div>
-		</div>
+		</Link>
 	)
 }
 
