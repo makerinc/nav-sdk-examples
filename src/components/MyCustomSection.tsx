@@ -72,18 +72,30 @@ const HeroSection = () => {
 				}}>
 					{item.title}
 				</div>
-				<Link target="category" categoryId='lia3UFlCDu' style={{
-					backgroundColor: '#F8E469',
-					color: 'black',
-					padding: '8px 16px',
-					borderRadius: '20px',
-					fontSize: '14px',
-					fontWeight: '500',
-					textDecoration: 'none',
-					display: 'inline-block',
+				<div style={{
+					display: 'flex',
+					gap: '8px',
 				}}>
-					Shop now
-				</Link>
+					<Link target="category" categoryId='lia3UFlCDu' style={{
+						backgroundColor: '#F8E469',
+						color: 'black',
+						padding: '8px 16px',
+						borderRadius: '20px',
+						fontSize: '14px',
+						fontWeight: '500',
+						textDecoration: 'none',
+						display: 'inline-block',
+					}}>
+						Shop now
+					</Link>
+					<Link target="_blank" href="https://example.com/products/premium-cotton-tshirt?variant=V12345" style={{
+						color: 'white',
+						fontSize: '14px',
+						fontWeight: '500',
+						textDecoration: 'underline',
+						display: 'inline-block',
+					}}>Learn More</Link>
+				</div>
 			</div>
 			{item.specialTag && (
 				<div style={{
