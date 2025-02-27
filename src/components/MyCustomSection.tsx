@@ -75,6 +75,7 @@ const HeroSection = () => {
 				<div style={{
 					display: 'flex',
 					gap: '8px',
+					alignItems: 'center'
 				}}>
 					<Link target="category" categoryId='lia3UFlCDu' style={{
 						backgroundColor: '#F8E469',
