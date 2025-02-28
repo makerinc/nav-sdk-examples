@@ -1,4 +1,4 @@
-import { registry, Link } from '@makerinc/nav-sdk'
+import { registry, NavLink } from '@makerinc/nav-sdk'
 
 type item = {
 	tag: string,
@@ -77,7 +77,7 @@ const HeroSection = () => {
 					gap: '8px',
 					alignItems: 'center'
 				}}>
-					<Link target="category" categoryId='lia3UFlCDu' style={{
+					<NavLink target="category" categoryId='lia3UFlCDu' style={{
 						backgroundColor: '#F8E469',
 						color: 'black',
 						padding: '8px 16px',
@@ -88,14 +88,14 @@ const HeroSection = () => {
 						display: 'inline-block',
 					}}>
 						Shop now
-					</Link>
-					<Link target="_blank" href="https://example.com/products/premium-cotton-tshirt?variant=V12345" style={{
+					</NavLink>
+					<NavLink target="_blank" href="https://example.com/products/premium-cotton-tshirt?variant=V12345" style={{
 						color: 'white',
 						fontSize: '14px',
 						fontWeight: '500',
 						textDecoration: 'underline',
 						display: 'inline-block',
-					}}>Learn More</Link>
+					}}>Learn More</NavLink>
 				</div>
 			</div>
 			{item.specialTag && (
